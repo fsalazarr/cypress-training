@@ -1,0 +1,25 @@
+{
+  "name": "cypress-training",
+  "version": "1.0.0",
+  "description": "This is a Workshop about Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fsalazarr/cypress-training.git"
+  },
+  "keywords": [
+    "ui-testing",
+    "dojo",
+    "practice",
+    "cypress"
+  ],
+  "author": "Faiber fsalazarr@unal.edu.co https://github.com/fsalazarr/",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fsalazarr/cypress-training/issues"
+  },
+  "homepage": "https://github.com/fsalazarr/cypress-training#readme"
+}
