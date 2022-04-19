@@ -12,8 +12,12 @@ const shippingStepPage = new ShippingStepPage();
 const paymentStepPage = new PaymentStepPage();
 
 describe("Buy a t-shirt", () => {
+  let desiredOutput: string;
   it("then the t-shirt should be bought", () => {
+    // Arrange
+    desiredOutput = 'Your order on My Store is complete.'
     menuContentPage.visitMenuContentPage();
+    // Action
     menuContentPage.goToTShirtMenu();
     productListPage.addTShirt();
     productListPage.proceedPopoutCheckOut();
@@ -26,6 +30,7 @@ describe("Buy a t-shirt", () => {
     shippingStepPage.proceedShippingCheckout();
     paymentStepPage.selectPaymentMethod();
     paymentStepPage.confirmOrder();
-    paymentStepPage.verifyOutput();
+    // Assert
+    paymentStepPage.verifyOutput(desiredOutput);
   });
 });
