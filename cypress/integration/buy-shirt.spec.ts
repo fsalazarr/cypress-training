@@ -1,7 +1,7 @@
 import {
   MenuContentPage, ProductListPage, ShoppingCartPage,
   LoginPage, AddressStepPage, ShippingStepPage, PaymentStepPage,
-} from "../page/index";
+} from "../page/AutomationPractice/index";
 
 const menuContentPage = new MenuContentPage();
 const productListPage = new ProductListPage();
@@ -15,7 +15,7 @@ describe("Buy a t-shirt", () => {
   let desiredOutput: string;
   it("then the t-shirt should be bought", () => {
     // Arrange
-    desiredOutput = 'Your order on My Store is complete.'
+    desiredOutput = "Your order on My Store is complete.";
     menuContentPage.visitMenuContentPage();
     // Action
     menuContentPage.goToTShirtMenu();
